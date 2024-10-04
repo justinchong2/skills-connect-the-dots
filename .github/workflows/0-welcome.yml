@@ -84,6 +84,7 @@ jobs:
           git config user.email github-actions[bot]@users.noreply.github.com
           git checkout main
           echo "Update _sidebar.md for the 1st time"
+          git pull
           cp -f .github/files/_sidebar01.md docs/_sidebar.md
           git add docs/_sidebar.md
           git commit -m "updated _sidebar.md"
